@@ -77,5 +77,5 @@ Food Tracking App, kullanıcıların beslenme, egzersiz, tarif ve su tüketimini
 - Çizgi, çubuk ve pasta grafiklerle görsel analizler.
 
 🧑‍💻 Geliştirici
-*Merve Şahin
-  -GitHub: mervesahin02
+**Merve Şahin**
+  - GitHub: mervesahin02
