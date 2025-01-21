@@ -72,7 +72,6 @@ Food Tracking App, kullanıcıların beslenme, egzersiz, tarif ve su tüketimini
   -Sağlıklı yemek tarifleri ekleyin ve yönetin.
 
 ---
-
 🎨 Tasarım ve Grafikler
 - Kullanıcı dostu tasarım.
 - Çizgi, çubuk ve pasta grafiklerle görsel analizler.
