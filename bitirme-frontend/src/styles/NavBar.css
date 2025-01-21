@@ -1,0 +1,21 @@
+/* NavBar.css */
+
+.navbar {
+    background: linear-gradient(90deg, #3f7de9, #79aab8);
+    /* Arkaplan Dashboard ve Home ile uyumlu hale getirildi */
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .MuiTypography-root {
+    color: white;
+}
+
+.navbar .MuiButton-root {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .MuiButton-root:hover {
+    color: #ffd700;
+}

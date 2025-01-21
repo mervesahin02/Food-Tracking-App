@@ -1,0 +1,226 @@
+/* Dashboard.css */
+.dashboard-container {
+    background: linear-gradient(135deg, #79aab8, #3f7de9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+.dashboard-welcome-banner {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff9, 0 0 30px #ff9, 0 0 40px #ff9, 0 0 50px #ff9;
+    font-family: Arial, sans-serif;
+    animation: dashboard-glow 1.5s infinite alternate;
+    z-index: 10;
+}
+
+@keyframes dashboard-glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 20px #ffd700;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ffa500, 0 0 30px #ffa500, 0 0 40px #ffa500;
+    }
+}
+
+.dashboard-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    position: relative;
+    z-index: 5;
+}
+
+.dashboard-arrow {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashboard-arrow:hover {
+    transform: scale(1.1);
+}
+
+.dashboard-left-arrow {
+    margin-right: 20px;
+}
+
+.dashboard-right-arrow {
+    margin-left: 20px;
+}
+
+.dashboard-cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 2.5s ease-in-out;
+}
+
+.dashboard-animate-left {
+    transform: translateX(-100%);
+}
+
+.dashboard-animate-right {
+    transform: translateX(100%);
+}
+
+.dashboard-small-card,
+.dashboard-large-card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.dashboard-card:nth-child(1) {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+.dashboard-card:nth-child(2) {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+}
+
+.dashboard-card:nth-child(3) {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+}
+
+.dashboard-card:nth-child(4) {
+    background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+}
+
+.dashboard-small-card {
+    flex: 1;
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.dashboard-large-card {
+    flex: 2;
+    transform: scale(1.2);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-large-card:hover {
+    transform: scale(1.25);
+}
+
+.dashboard-animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dashboard-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: dashboard-move 20s linear infinite;
+}
+
+.dashboard-circle-1 {
+    width: 300px;
+    height: 300px;
+    background-color: #f48fb1;
+    top: 20%;
+    left: 10%;
+    animation-duration: 5s;
+}
+
+.dashboard-circle-2 {
+    width: 400px;
+    height: 400px;
+    background-color: #90caf9;
+    top: 50%;
+    left: 70%;
+    animation-duration: 10s;
+}
+
+@keyframes dashboard-move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 30px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Dairelerin içine görseller için düzenlemeler */
+.dashboard-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: dashboard-move 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-circle img {
+    width: 60%;
+    /* Görsellerin boyutunu ayarlıyoruz */
+    height: 60%;
+    object-fit: contain;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.dashboard-circle-1 {
+    width: 300px;
+    height: 300px;
+    background-color: #f48fb1;
+    top: 20%;
+    left: 10%;
+    animation-duration: 5s;
+}
+
+.dashboard-circle-2 {
+    width: 400px;
+    height: 400px;
+    background-color: #90caf9;
+    top: 50%;
+    left: 70%;
+    animation-duration: 10s;
+}
+
+/* Fade-in animasyonu */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

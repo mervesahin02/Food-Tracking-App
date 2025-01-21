@@ -1,0 +1,149 @@
+/* Ana Container */
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #79aab8, #3f7de9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+/* Hoş Geldiniz Banner */
+.home-welcome-banner {
+    margin-bottom: 50px;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Hoş Geldiniz Yazısı */
+.home-welcome-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00ff,
+        0 0 50px #ff00ff,
+        0 0 60px #ff00ff,
+        0 0 70px #ff00ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+    }
+}
+
+/* Kaydırma Animasyonu için Alt Yazı */
+.home-welcome-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slideIn 8s linear infinite;
+}
+
+/* Sağdan Sola Kaydırma */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Kartlar */
+.home-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+/* Genel Kart Stili */
+.home-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.home-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.home-card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Kart Renkleri */
+.home-exercise-card {
+    background: linear-gradient(to right, #66c7c6, #66c7c6);
+    color: white;
+}
+
+.home-recipe-card {
+    background: linear-gradient(to right, #4d45ed, #4d45ed);
+    color: white;
+}
+
+.home-water-card {
+    background: linear-gradient(to right, #428dd8, #428dd8);
+    color: white;
+}
+
+/*Bunu açınca kartlar üzerine gelince geçişli oluyor.
+.home-card:hover.home-exercise-card {
+    background: linear-gradient(to right, #234d8c, #8653b2);
+}
+
+.home-card:hover.home-recipe-card {
+    background: linear-gradient(to right, #2557b5, #7a278f);
+}
+
+.home-card:hover.home-water-card {
+    background: linear-gradient(to right, #76206e, #1b1761);
+}
+    */

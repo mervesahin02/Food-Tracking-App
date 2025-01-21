@@ -1,0 +1,76 @@
+/* SideMenu.css */
+
+/* Menü Butonu */
+.menu-button {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Drawer (Menü Paneli) */
+.custom-drawer {
+    background-color: #1e1e2f;
+    color: white;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menü Başlığı */
+.menu-header {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+/* Menü Öğeleri */
+.menu-item {
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.menu-icon {
+    color: #76c7c0;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.menu-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.menu-item:hover .menu-icon {
+    color: #4fd1c5;
+}
+
+/* Menü Alt Yazısı */
+.menu-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+    background-color: #1a1a28;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

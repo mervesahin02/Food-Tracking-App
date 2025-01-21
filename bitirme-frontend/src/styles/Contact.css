@@ -1,0 +1,58 @@
+/* Contact Sayfası Kart Stilleri */
+.contact-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Gölgelendirme */
+    border-radius: 12px;
+    /* Köşelerin yuvarlatılması */
+    overflow: hidden;
+    /* Taşmaları gizle */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Hover'da animasyon */
+}
+
+.contact-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Hover'da daha belirgin gölge */
+}
+
+/* Kart İçeriği */
+.contact-card-content {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Görsel Stili */
+.contact-card-media {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Başlık ve Metin Renkleri */
+.contact-title {
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.contact-body {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: #1976d2;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}

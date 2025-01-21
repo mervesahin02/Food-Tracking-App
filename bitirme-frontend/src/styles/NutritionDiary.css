@@ -1,0 +1,269 @@
+/* NutritionDiary.css */
+
+/* Sayfanın genel düzeni */
+/* NutritionDiary.css */
+
+/* Genel düzen */
+.nutrition-diary__container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Başlık */
+.nutrition-diary__header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.nutrition-diary__header-image {
+    width: 50px;
+    height: 50px;
+    animation: nutrition-diary__jump 1.5s infinite;
+}
+
+@keyframes nutrition-diary__jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.nutrition-diary__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.nutrition-diary__subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Yeni giriş kartı */
+.nutrition-diary__new-entry-card {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.nutrition-diary__new-entry-form-title {
+    font-size: 1.8rem;
+    color: #1976d2;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Liste kartı */
+.nutrition-diary__entries-list-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.nutrition-diary__entries-list-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+/* Listeyi göster/gizle butonu */
+.nutrition-diary__toggle-list-button {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1976d2;
+    color: white;
+}
+
+.nutrition-diary__toggle-list-button:hover {
+    background-color: #0056b3;
+}
+
+/* DataGrid stili */
+.MuiDataGrid-root {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MuiDataGrid-columnHeaders {
+    background-color: #1976d2 !important;
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.MuiDataGrid-cell {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+/* Başlık Alanı */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-image {
+    width: 50px;
+    height: 50px;
+    animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.nutrition-diary-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.nutrition-diary-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Yeni Giriş Kartı */
+.new-entry-card {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.new-entry-form-title {
+    font-size: 1.8rem;
+    color: #1976d2;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form alanları */
+.new-entry-form .MuiTextField-root {
+    margin-bottom: 15px;
+}
+
+.new-entry-form .MuiButton-root {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #1976d2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.new-entry-form .MuiButton-root:hover {
+    background-color: #1565c0;
+}
+
+/* Liste Kartı */
+.entries-list-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.entries-list-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+/* DataGrid stili */
+.MuiDataGrid-root {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MuiDataGrid-columnHeaders {
+    background-color: #1976d2 !important;
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.MuiDataGrid-cell {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Button hover stili */
+.add-entry-button {
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.add-entry-button:hover {
+    background-color: #0056b3;
+}
+
+/* Form grid düzeni */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Genel element stili */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
