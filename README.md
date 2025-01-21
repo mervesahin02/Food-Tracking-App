@@ -42,20 +42,23 @@ Food Tracking App, kullanıcıların beslenme, egzersiz, tarif ve su tüketimini
 - Axios (API entegrasyonu)
 
 ---
-1. Projeyi Klonla
-git clone https://github.com/mervesahin02/Food-Tracking-App.git
-cd Food-Tracking-App
+**1. Projeyi Klonla**
+
+-git clone https://github.com/mervesahin02/Food-Tracking-App.git
+-cd Food-Tracking-App
 
 ---
-2. Backend Kurulumu
-cd backend
-mvn spring-boot:run
+**2. Backend Kurulumu**
+
+-cd backend
+-mvn spring-boot:run
 
 ---
-3. Frontend Kurulumu
-cd ../frontend
-npm install
-npm start
+**3. Frontend Kurulumu**
+
+-cd ../frontend
+-npm install
+-npm start
 
 ----
 
