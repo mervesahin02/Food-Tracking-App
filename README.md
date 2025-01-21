@@ -79,3 +79,4 @@ Food Tracking App, kullanıcıların beslenme, egzersiz, tarif ve su tüketimini
 🧑‍💻 Geliştirici
 **Merve Şahin**
   - GitHub: mervesahin02
+  - Email: sydmervesihin@gmail.com
